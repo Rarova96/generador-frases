@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: rgb(221, 241, 243);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 110px;
+}
+
+.boton {
+    display: block;
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 18px;
+    background: rgb(248, 237, 218);
+    box-shadow: 0 4px 0 #161616;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.boton:hover {
+    background: rgb(222, 180, 180);
+      transform: translateY(-2px);
+}
+
+.boton:active {
+    background: rgb(222, 180, 180);
+    box-shadow: 0 1px 0 #161616;
+      transform: translateY(4px);
+}
+
+
+
+div {
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+
+#resultado{
+    color: rgb(198, 89, 89);
+    font-weight: bold;
+}
