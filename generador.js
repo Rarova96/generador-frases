@@ -32,10 +32,30 @@ const aleatorio = () => {
 
 
 
-//DOOM para que nos muestre al darle al botón una frase aleatoria:
+const categorias = {
+    chistes,
+    refranes,
+    moralejas,
+    proverbios,
+    consejos
+};
+
+
+//El botón generador se encarga de llamar a aleatorios o a una categoría en concreto
 
 document.querySelector('.boton-aleatorio').addEventListener('click', () => {
-    const frase = aleatorio(agrupacion);
+    const seleccion = document.getElementById('categorias').value;
+    let frase = '';
+
+    if (seleccion === 'aleatorio') {
+        const tipoFrase = agrupacion[Math.floor(Math.random() * agrupacion.length)];
+        frase = tipoFrase[Math.floor(Math.random() * tipoFrase.length)];
+    } else {
+        const categoriaElegida = categorias[seleccion];
+        frase = categoriaElegida[Math.floor(Math.random() * categoriaElegida.length)];
+    }
+
+    fraseActual = frase;
     document.getElementById('resultado').textContent = frase;
 });
 
@@ -44,12 +64,12 @@ document.querySelector('.boton-aleatorio').addEventListener('click', () => {
 
 
 
-document.querySelector('.boton-favorito').addEventListener('click', () =>{
-    if(fraseActual === ''){
+document.querySelector('.boton-favorito').addEventListener('click', () => {
+    if (fraseActual === '') {
         alert('Primero genera una frase antes de guardarla.');
         return;
     }
-    if(favoritas.includes(fraseActual)){
+    if (favoritas.includes(fraseActual)) {
         alert('Ya guardaste esta frase.');
         return;
     }
@@ -60,15 +80,15 @@ document.querySelector('.boton-favorito').addEventListener('click', () =>{
 
 //DOOM para que nos muestre al darle al botón "Mostrar favoritos" una lista de favoritos:
 
-document.querySelector('.boton-mostrar-favorito').addEventListener('click', () =>{
+document.querySelector('.boton-mostrar-favorito').addEventListener('click', () => {
 
     const lista = document.getElementById('lista');
     lista.innerHTML = ''; //Limpiamos la lista antes de guardarla
 
-    if(fraseActual === ''){
+    if (fraseActual === '') {
         alert('No hay frases guardadas como favorito');
     }
-    favoritas.forEach(frase =>{
+    favoritas.forEach(frase => {
         const item = document.createElement('li');
         item.textContent = frase;
         lista.appendChild(item); //Agregamos a la lista un nuevo elemento item como hijo
@@ -78,8 +98,11 @@ document.querySelector('.boton-mostrar-favorito').addEventListener('click', () =
 
 //DOOM para que no nos muestre la lista
 
-document.querySelector('.boton-ocultar-favorito').addEventListener('click', ()=>{
-    
+document.querySelector('.boton-ocultar-favorito').addEventListener('click', () => {
+
     const ocultar = document.getElementById('lista');
     ocultar.innerHTML = '';
 })
+
+
+

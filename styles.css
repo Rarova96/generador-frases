@@ -37,6 +37,7 @@ h1 {
 .div-boton-aleatorio{
     margin-top: 80px;
     margin-bottom: 30px;
+    margin-left: 145px;
     display: flex;
     justify-content: center;
     height: 60px;
@@ -113,7 +114,7 @@ h1 {
 
 #resultado {
     font-size: 1.2rem;
-    margin: 1rem 0;
+    margin-bottom: 100px;
     color: #333;
     font-style: italic;
     text-align: center;
@@ -167,7 +168,7 @@ ul#lista li {
     margin-top: 20px;
 }
 
-.categorias{
+#categorias{
     height: 50px;
     width: 150px;
     border-radius: 20px;
@@ -177,14 +178,18 @@ ul#lista li {
     box-shadow: 0 4px 0 #161616;
     cursor: pointer;
     transition: all 0.2s ease; 
+    position: relative;
+    left: 200px;
+    text-align: center;
+
 }
 
-.categorias:hover {
+#categorias:hover {
     background: rgb(10, 222, 141);
       transform: translateY(-2px);
 }
 
-.categorias:active {
+#categorias:active {
     background: rgb(10, 222, 141);
     box-shadow: 0 1px 0 #161616;
       transform: translateY(4px);

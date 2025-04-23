@@ -15,11 +15,21 @@
 
 <body>
 
-    <!--Botón para generar aleatorios y guardar frases favoritas-->
+    <!--Botón para generar aleatorios, guardar frases favoritas y mostrar categorías-->
 
     <div class="div-boton-aleatorio">
         <button class="boton-aleatorio">Generador</button>
         <button class="boton-favorito"> Guardar favorito</button>
+        <label for="categorias"></label>
+        <select id="categorias">
+          <option value="" disabled selected>Categorías</option>
+          <option value="aleatorio">Aleatorio</option>
+          <option value="chistes">Chistes</option>
+          <option value="refranes">Refranes</option>
+          <option value="moralejas">Moralejas</option>
+          <option value="proverbios">Proverbios</option>
+          <option value="consejos">Consejos</option>
+        </select>
     </div>
 
     <!--Recipiente donde va a estar la generación de frases aleatorias-->
@@ -44,7 +54,7 @@
     <!--Botón para mostrar todas las categorías-->
 
     <div>
-        <button class = "categorias">Categorías</button>
+
     </div>
 
 
