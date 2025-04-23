@@ -1,21 +1,18 @@
 # 🎲 Generador de Frases Aleatorias
 
-Este es mi primer proyecto con HTML, CSS y JavaScript. Al hacer click en un botón Generador, el programa muestra una frase aleatoria que puede ser un chiste, refrán, moraleja, proverbio o consejo. Además podemos guardar los favoritos, mostrarlos y ocultarlos. Tenemos un botón de categorías que cambia el funcionamiento del botón Generador, mostrando solo frases de esa categoría.
+Este es mi primer proyecto con HTML, CSS y JavaScript. Al hacer click en un botón Categorías, el programa muestra los tipos de frases que pueden ser mostradas un chiste, refrán, moraleja, proverbio o consejo tras darle click al botón Generador. Además podemos guardar los favoritos, mostrarlos y ocultarlos.
 
 ---
 
 ## 🚀 ¿Cómo se usa?
 
 1. Abre el archivo `index.html` en un navegador.
-2. Haz click en el botón que dice **Generador**.
-3. La frase se genera y aparece en la consola.
-4. Guarda la frase haciendo click en el botón que dice **Guardar favorito**.
-5. Muestra los favoritos haciendo click en el botón **Mostrar favoritos**.
-6. Oculta los favoritos haciendo click en el botón **Ocultar favoritos**.
-7. Nos muestra las categorías disponibles al hacer click en el botón **Categorías**.
-8. Haz click en el botón que dice **Generador**.
-9. Genera una frase de la categoría seleccionada y aparece en la consola.
-
+2. Haz click en el botón que dice **Categorías**.
+3. Nos muestra los tipos de frases que se pueden mostrar por consola.
+4. Haz click en el botón que dice **Generador** para mostrar en consola estas frases.
+5. Guarda la frase haciendo click en el botón que dice **Guardar favorito**.
+6. Muestra los favoritos haciendo click en el botón **Mostrar favoritos**.
+7. Oculta los favoritos haciendo click en el botón **Ocultar favoritos**.
 ---
 
 ## 📁 Archivos del proyecto
