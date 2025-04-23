@@ -12,7 +12,7 @@ Este es mi primer proyecto con HTML, CSS y JavaScript. Al hacer click en un bot�
 4. Guarda la frase haciendo click en el botón que dice **Guardar favorito**.
 5. Muestra los favoritos haciendo click en el botón **Mostrar favoritos**.
 6. Oculta los favoritos haciendo click en el botón **Ocultar favoritos**.
-7. Nos muestra las categorías disponibles al hacer click en el botón **Categorías**.¨
+7. Nos muestra las categorías disponibles al hacer click en el botón **Categorías**.
 8. Haz click en el botón que dice **Generador**.
 9. Genera una frase de la categoría seleccionada y aparece en la consola.
 
